@@ -41,6 +41,7 @@ void main () {
         // print('Organic Interface Studios');
         // sleep(const Duration(seconds: 3));
         // print('Attention Deficit oH Dear v0.1');
+        // print('Gamify your life');
         // sleep(const Duration(seconds: 3));
         // print("\x1B[2J\x1B[0;0H");
         // sleep(const Duration(seconds: 2));
@@ -98,28 +99,26 @@ void main () {
           print('');
           print('');
             int? idDelete = int.tryParse(stdin.readLineSync() ?? '');
-              while (number == null) {
-              print('Please input a number');
-              number = int.tryParse(stdin.readLineSync() ?? '');
-                  if (number == null) {
-                  userInput = null;
-                  print('This is not a number');
-                  print('Please try again');
-                  }
+              // while (number == null) {
+              // print('Please input a number');
+              // number = int.tryParse(stdin.readLineSync() ?? '');
+              //     if (number == null) {
+              //     userInput = null;
+              //     print('This is not a number');
+              //     print('Please try again');
+              //     }
               if (toDoList.containsKey(idDelete)) {
                   toDoList.remove(idDelete);
                   taskId--;
                   print('Good Job!');
                   sleep(const Duration(milliseconds: 1000));
                   print("\x1B[2J\x1B[0;0H");
-                  print('');
-                  print('');
               for (final allPrint in mainMenu.entries) {
                 print('${allPrint.key}: ${allPrint.value}');
               } ;
             }
         }
-      }
+      // }
     case 'c' :  
       userInput = null;
       print("\x1B[2J\x1B[0;0H");
