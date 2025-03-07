@@ -89,7 +89,7 @@ void main () {
     print("\x1B[2J\x1B[0;0H");
     sleep(const Duration(milliseconds: 300));
     print('Which good fortune have you brought from your adventures?');
-    print('Which tasks have you completed?');
+    print('Which task have you completed?');
     print('');
             for (final allPrint in toDoList.entries)
             { 
