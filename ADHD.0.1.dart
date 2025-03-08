@@ -15,7 +15,11 @@ void main () {
   };
   
   Map<int, String> toDoList = {};
-  int taskId = toDoList.length + 1;
+  int taskId = toDoList.length;
+  // int taskId = 0;
+  // autoKey() {
+  //   return ++taskId;
+  // }
 
 // // // // // // // // Splash Screen // // // // // // // // //
         // print("\x1B[2J\x1B[0;0H");
@@ -99,17 +103,9 @@ void main () {
           print('');
           print('');
             int? idDelete = int.tryParse(stdin.readLineSync() ?? '');
-              // while (number == null) {
-              // print('Please input a number');
-              // number = int.tryParse(stdin.readLineSync() ?? '');
-              //     if (number == null) {
-              //     userInput = null;
-              //     print('This is not a number');
-              //     print('Please try again');
-              //     }
               if (toDoList.containsKey(idDelete)) {
                   toDoList.remove(idDelete);
-                  taskId--;
+                  // taskId--;
                   print('Good Job!');
                   sleep(const Duration(milliseconds: 1000));
                   print("\x1B[2J\x1B[0;0H");
@@ -118,19 +114,21 @@ void main () {
               } ;
             }
         }
-      // }
     case 'c' :  
       userInput = null;
       print("\x1B[2J\x1B[0;0H");
       sleep(const Duration(milliseconds: 300));
       print('Enter name of new adventure');
       print('');
+        if (taskId >= toDoList.length) {
+          ++taskId;
+        } 
         String task = stdin.readLineSync()!;
         toDoList[taskId] = task;
       sleep(const Duration(milliseconds: 300));
       print("\x1B[2J\x1B[0;0H");
       print('Quest added!');
-        taskId++;
+        // taskId++;
       sleep(const Duration(milliseconds: 1000));
       print("\x1B[2J\x1B[0;0H");
               for (final allPrint in mainMenu.entries) {
