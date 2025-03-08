@@ -129,7 +129,7 @@ void main () {
               } ;
     case 'd' : print("\x1B[2J\x1B[0;0H");
       sleep(const Duration(milliseconds: 300));
-      print('Ok now bye bye than!');
+      print('Ok now bye bye then!');
       sleep(const Duration(seconds: 2));
       print("\x1B[2J\x1B[0;0H");
     default : userInput = null;
