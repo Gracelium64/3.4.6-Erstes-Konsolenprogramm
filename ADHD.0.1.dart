@@ -1,11 +1,8 @@
-import 'dart:async';
 import 'dart:io';
 
 void main () {
 
   String? userInput = null;
-  int? number = null;
-  String dblPnt = ':';
 
   Map<String, String> mainMenu = {
     '(a)' : 'View List',
@@ -13,42 +10,38 @@ void main () {
     '(c)' : 'Add a Task',
     '(d)' : 'End program',
   };
-  
+
   Map<int, String> toDoList = {};
   int taskId = toDoList.length;
-  // int taskId = 0;
-  // autoKey() {
-  //   return ++taskId;
-  // }
 
 // // // // // // // // Splash Screen // // // // // // // // //
-        // print("\x1B[2J\x1B[0;0H");
-        // print('Initializing');
-        // sleep(const Duration(milliseconds: 300));
-        // print("\x1B[2J\x1B[0;0H");
-        // print('Initializing');
-        // sleep(const Duration(milliseconds: 300));
-        // print("\x1B[2J\x1B[0;0H");
-        // print('Initializing.');
-        // sleep(const Duration(milliseconds: 300));
-        // print("\x1B[2J\x1B[0;0H");
-        // print('Initializing..');
-        // sleep(const Duration(milliseconds: 300));
-        // print("\x1B[2J\x1B[0;0H");
-        // print('Initializing...');
-        // sleep(const Duration(milliseconds: 300));
-        // print("\x1B[2J\x1B[0;0H");
-        // print('Initializing....');
-        // sleep(const Duration(milliseconds: 500));
-        // print("\x1B[2J\x1B[0;0H");
-        // sleep(const Duration(seconds: 2));
-        // print('Organic Interface Studios');
-        // sleep(const Duration(seconds: 3));
-        // print('Attention Deficit oH Dear v0.1');
-        // print('Gamify your life');
-        // sleep(const Duration(seconds: 3));
-        // print("\x1B[2J\x1B[0;0H");
-        // sleep(const Duration(seconds: 2));
+        print("\x1B[2J\x1B[0;0H");
+        print('Initializing');
+        sleep(const Duration(milliseconds: 300));
+        print("\x1B[2J\x1B[0;0H");
+        print('Initializing');
+        sleep(const Duration(milliseconds: 300));
+        print("\x1B[2J\x1B[0;0H");
+        print('Initializing.');
+        sleep(const Duration(milliseconds: 300));
+        print("\x1B[2J\x1B[0;0H");
+        print('Initializing..');
+        sleep(const Duration(milliseconds: 300));
+        print("\x1B[2J\x1B[0;0H");
+        print('Initializing...');
+        sleep(const Duration(milliseconds: 300));
+        print("\x1B[2J\x1B[0;0H");
+        print('Initializing....');
+        sleep(const Duration(milliseconds: 500));
+        print("\x1B[2J\x1B[0;0H");
+        sleep(const Duration(seconds: 2));
+        print('Organic Interface Studios');
+        sleep(const Duration(seconds: 3));
+        print('Attention Deficit oH Dear v0.1');
+        print('Gamify your life');
+        sleep(const Duration(seconds: 3));
+        print("\x1B[2J\x1B[0;0H");
+        sleep(const Duration(seconds: 2));
 
 // // // // // // // // // Main Menu // // // // // // // // //
                                                               print("\x1B[2J\x1B[0;0H");
