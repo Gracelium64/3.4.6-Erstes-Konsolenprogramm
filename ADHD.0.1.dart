@@ -126,7 +126,7 @@ void main () {
       sleep(const Duration(milliseconds: 300));
       print('Enter name of new adventure');
       print('');
-        if (taskId >= toDoList.length) {
+        if (taskId <= toDoList.length) {
           ++taskId;
         } 
         String task = stdin.readLineSync()!;
