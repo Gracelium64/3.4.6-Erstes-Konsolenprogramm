@@ -15,33 +15,33 @@ void main () {
   int taskId = toDoList.length;
 
 // // // // // // // // Splash Screen // // // // // // // // //
-        print("\x1B[2J\x1B[0;0H");
-        print('Initializing');
-        sleep(const Duration(milliseconds: 300));
-        print("\x1B[2J\x1B[0;0H");
-        print('Initializing');
-        sleep(const Duration(milliseconds: 300));
-        print("\x1B[2J\x1B[0;0H");
-        print('Initializing.');
-        sleep(const Duration(milliseconds: 300));
-        print("\x1B[2J\x1B[0;0H");
-        print('Initializing..');
-        sleep(const Duration(milliseconds: 300));
-        print("\x1B[2J\x1B[0;0H");
-        print('Initializing...');
-        sleep(const Duration(milliseconds: 300));
-        print("\x1B[2J\x1B[0;0H");
-        print('Initializing....');
-        sleep(const Duration(milliseconds: 500));
-        print("\x1B[2J\x1B[0;0H");
-        sleep(const Duration(seconds: 2));
-        print('Organic Interface Studios');
-        sleep(const Duration(seconds: 3));
-        print('Attention Deficit oH Dear v0.1');
-        print('Gamify your life');
-        sleep(const Duration(seconds: 3));
-        print("\x1B[2J\x1B[0;0H");
-        sleep(const Duration(seconds: 2));
+        // print("\x1B[2J\x1B[0;0H");
+        // print('Initializing');
+        // sleep(const Duration(milliseconds: 300));
+        // print("\x1B[2J\x1B[0;0H");
+        // print('Initializing');
+        // sleep(const Duration(milliseconds: 300));
+        // print("\x1B[2J\x1B[0;0H");
+        // print('Initializing.');
+        // sleep(const Duration(milliseconds: 300));
+        // print("\x1B[2J\x1B[0;0H");
+        // print('Initializing..');
+        // sleep(const Duration(milliseconds: 300));
+        // print("\x1B[2J\x1B[0;0H");
+        // print('Initializing...');
+        // sleep(const Duration(milliseconds: 300));
+        // print("\x1B[2J\x1B[0;0H");
+        // print('Initializing....');
+        // sleep(const Duration(milliseconds: 500));
+        // print("\x1B[2J\x1B[0;0H");
+        // sleep(const Duration(seconds: 2));
+        // print('Organic Interface Studios');
+        // sleep(const Duration(seconds: 3));
+        // print('Attention Deficit oH Dear v0.1');
+        // print('Gamify your life');
+        // sleep(const Duration(seconds: 3));
+        // print("\x1B[2J\x1B[0;0H");
+        // sleep(const Duration(seconds: 2));
 
 // // // // // // // // // Main Menu // // // // // // // // //
                                                               print("\x1B[2J\x1B[0;0H");
@@ -105,7 +105,8 @@ void main () {
               for (final allPrint in mainMenu.entries) {
                 print('${allPrint.key}: ${allPrint.value}');
               } ;
-            }
+            } else {print('Enter a valid entry number, press "b" to continue');
+          }
         }
     case 'c' :  
       userInput = null;
