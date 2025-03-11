@@ -4,7 +4,7 @@ void main () {
 
   String? userInput = null;
 
-  Map<String, String> mainMenu = {
+  Map<String, String> actionsMenu = {
     '(a)' : 'View List',
     '(b)' : 'Complete a task',
     '(c)' : 'Add a Task',
@@ -49,7 +49,9 @@ void main () {
   print('');
   print('Main Menu');
   sleep(const Duration(milliseconds: 500));
-     for (final allPrint in mainMenu.entries) {
+
+// // // // // // // // // Actions Menu // // // // // // // //
+     for (final allPrint in actionsMenu.entries) {
         print('${allPrint.key}: ${allPrint.value}');
      }
 
@@ -70,7 +72,7 @@ void main () {
           }
       print('');
       print('');
-          for (final allPrint in mainMenu.entries) {
+          for (final allPrint in actionsMenu.entries) {
           print('${allPrint.key}: ${allPrint.value}');
           }
     case 'b' :  
@@ -81,7 +83,7 @@ void main () {
       print('No quests available to complete!');
       sleep(const Duration(milliseconds: 2500));
       print("\x1B[2J\x1B[0;0H");
-          for (final allPrint in mainMenu.entries) {
+          for (final allPrint in actionsMenu.entries) {
           print('${allPrint.key}: ${allPrint.value}');
           };
       } else{
@@ -114,7 +116,7 @@ void main () {
                   print('Good Job!');
                   sleep(const Duration(milliseconds: 1000));
                   print("\x1B[2J\x1B[0;0H");
-              for (final allPrint in mainMenu.entries) {
+              for (final allPrint in actionsMenu.entries) {
                 print('${allPrint.key}: ${allPrint.value}');
               } ;
             } else {print('Enter a valid entry number, press "b" to continue');
@@ -136,7 +138,7 @@ void main () {
       print('Quest added!');
       sleep(const Duration(milliseconds: 1000));
       print("\x1B[2J\x1B[0;0H");
-              for (final allPrint in mainMenu.entries) {
+              for (final allPrint in actionsMenu.entries) {
                 print('${allPrint.key}: ${allPrint.value}');
               } 
 // {
